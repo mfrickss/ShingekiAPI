@@ -36,7 +36,7 @@
 
 ```bash
 # 1. Clone o repositório
-git clone https://github.com/usuario/repositorio
+git clone https://github.com/mfrickss/ShingekiAPI
 
 # 2. Acesse a pasta do projeto
 cd nome-da-pasta
