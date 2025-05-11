@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ShingekiAPI\\MinimalApi\\MinimalApi.csproj": {}
+    "C:\\Users\\joaoc\\OneDrive\\Desktop\\asd\\ShingekiAPI\\MinimalApi\\MinimalApi.csproj": {}
   },
   "projects": {
-    "C:\\ShingekiAPI\\MinimalApi\\MinimalApi.csproj": {
+    "C:\\Users\\joaoc\\OneDrive\\Desktop\\asd\\ShingekiAPI\\MinimalApi\\MinimalApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ShingekiAPI\\MinimalApi\\MinimalApi.csproj",
+        "projectUniqueName": "C:\\Users\\joaoc\\OneDrive\\Desktop\\asd\\ShingekiAPI\\MinimalApi\\MinimalApi.csproj",
         "projectName": "MinimalApi",
-        "projectPath": "C:\\ShingekiAPI\\MinimalApi\\MinimalApi.csproj",
-        "packagesPath": "C:\\Users\\ricar\\.nuget\\packages\\",
-        "outputPath": "C:\\ShingekiAPI\\MinimalApi\\obj\\",
+        "projectPath": "C:\\Users\\joaoc\\OneDrive\\Desktop\\asd\\ShingekiAPI\\MinimalApi\\MinimalApi.csproj",
+        "packagesPath": "C:\\Users\\joaoc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\joaoc\\OneDrive\\Desktop\\asd\\ShingekiAPI\\MinimalApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ricar\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\joaoc\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -63,7 +63,7 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.6.2, )"
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
