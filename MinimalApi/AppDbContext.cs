@@ -6,6 +6,9 @@ namespace MinimalApi
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
-        public DbSet<Titan> Titans => Set<Titan>();
+        public DbSet<Titan> tabelaTitans => Set<Titan>();
     }
 }
+
+
+ 

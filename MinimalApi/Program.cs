@@ -3,6 +3,20 @@ using MinimalApi;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlite("Data Source=titans.db"));
+
+var app = builder.Build();
+
+// app.MapGet("/titans", () => "Minima API RODANO!");
+app.MapGet("/titans", (AppDbContext db) =>
+{
+    var titans = db.tabelaTitans.ToList();
+    return Results.Ok(titans);
+});
+
+app.Run();
+
 
 
 

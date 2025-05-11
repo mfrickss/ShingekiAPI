@@ -10,11 +10,11 @@
         "projectUniqueName": "C:\\ShingekiAPI\\MinimalApi\\MinimalApi.csproj",
         "projectName": "MinimalApi",
         "projectPath": "C:\\ShingekiAPI\\MinimalApi\\MinimalApi.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\ricar\\.nuget\\packages\\",
         "outputPath": "C:\\ShingekiAPI\\MinimalApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ricar\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -43,6 +43,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.15, )"
