@@ -17,6 +17,18 @@ app.MapGet("/titans", (AppDbContext db) =>
 
 app.Run();
 
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+});
+
+app.UseCors();
+
 
 
 
