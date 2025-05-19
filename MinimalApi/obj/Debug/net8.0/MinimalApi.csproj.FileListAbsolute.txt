@@ -136,3 +136,5 @@ C:\Users\joaoc\OneDrive\Desktop\asd\ShingekiAPI\MinimalApi\obj\Debug\net8.0\refi
 C:\Users\joaoc\OneDrive\Desktop\asd\ShingekiAPI\MinimalApi\obj\Debug\net8.0\MinimalApi.pdb
 C:\Users\joaoc\OneDrive\Desktop\asd\ShingekiAPI\MinimalApi\obj\Debug\net8.0\MinimalApi.genruntimeconfig.cache
 C:\Users\joaoc\OneDrive\Desktop\asd\ShingekiAPI\MinimalApi\obj\Debug\net8.0\ref\MinimalApi.dll
+C:\Users\joaoc\OneDrive\Desktop\asd\ShingekiAPI\MinimalApi\bin\Debug\net8.0\MinimalApi.staticwebassets.runtime.json
+C:\ShingekiAPI\MinimalApi\bin\Debug\net8.0\MinimalApi.staticwebassets.runtime.json

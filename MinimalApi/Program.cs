@@ -1,6 +1,5 @@
 using Microsoft.EntityFrameworkCore;
 using MinimalApi;
-using Microsoft.AspNetCore.Builder;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,7 +21,20 @@ builder.Services.AddCors(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// CORS
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+});
+
+
 var app = builder.Build();
+
 
 app.UseCors();
 
@@ -32,6 +44,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+// Serve arquivos estáticos (wwwroot/index.html, CSS, JS)
+app.UseDefaultFiles();
+app.UseStaticFiles();
+
+// Rotas da API
 app.MapGet("/titans/{id}", async (int id, AppDbContext db) =>
 {
     var titan = await db.tabelaTitans.FindAsync(id);

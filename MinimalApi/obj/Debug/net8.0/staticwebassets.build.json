@@ -1,11 +1,77 @@
 {
   "Version": 1,
-  "Hash": "YAyF+gWo1OPGZ/QTNg1lvAk6S24tWLCwfC1pptHJreU=",
+  "Hash": "KbSfGPm5n09xUm95dgIgTPZUEC+cFMEh5bbwn57+9T8=",
   "Source": "MinimalApi",
   "BasePath": "_content/MinimalApi",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "MinimalApi\\wwwroot",
+      "Source": "MinimalApi",
+      "ContentRoot": "C:\\ShingekiAPI\\MinimalApi\\wwwroot\\",
+      "BasePath": "_content/MinimalApi",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\ShingekiAPI\\MinimalApi\\wwwroot\\index.html",
+      "SourceId": "MinimalApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\ShingekiAPI\\MinimalApi\\wwwroot\\",
+      "BasePath": "_content/MinimalApi",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\ShingekiAPI\\MinimalApi\\wwwroot\\script.js",
+      "SourceId": "MinimalApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\ShingekiAPI\\MinimalApi\\wwwroot\\",
+      "BasePath": "_content/MinimalApi",
+      "RelativePath": "script.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\script.js"
+    },
+    {
+      "Identity": "C:\\ShingekiAPI\\MinimalApi\\wwwroot\\style.css",
+      "SourceId": "MinimalApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\ShingekiAPI\\MinimalApi\\wwwroot\\",
+      "BasePath": "_content/MinimalApi",
+      "RelativePath": "style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\style.css"
+    }
+  ]
 }
