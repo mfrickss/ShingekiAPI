@@ -11,18 +11,23 @@ const formDelete = document.getElementById("form-delete");
 const apiURL = "http://localhost:5210/titans";
 
 const getTitans = async () => {
+  if (!listaTitans) {
+    console.error("Elemento 'lista-titans' não encontrado");
+    return;
+  }
+
   listaTitans.innerHTML = "";
 
   try {
     const response = await fetch(apiURL, {
       method: "GET",
       headers: {
-        "Content-Type": "aplicantion/json",
+        "Content-Type": "applicantion/json",
       },
     });
 
-    if (response.ok) {
-      throw new Error("Erro ao buscar os titans");
+    if (!response.ok) {
+      throw new Error(`Erro HTTP: ${response.status} - ${response.statusText}`);
     }
 
     const titans = await response.json();
@@ -40,7 +45,11 @@ const getTitans = async () => {
   }
 };
 
-btnTodos.addEventListener("click", (event) => {
-  event.preventDefault();
-  getTitans();
-});
+if (btnTodos) {
+  btnTodos.addEventListener("click", (event) => {
+    event.preventDefault();
+    getTitans();
+  });
+} else {
+  console.error("Elemento 'btn-todos' não encontrado.");
+}
