@@ -67,11 +67,52 @@
 
     <section class="alterarTitan">
       <h1>ALTERAR TITAN</h1>
+      <form action="/alterarTitan" method="PUT" id="form-put">
+        <label for="id">ID do Titan</label>
+        <input
+          type="number"
+          id="input-id-update"
+          placeholder="Informe ID do Titan"
+          required
+        />
+        <label for="nome">Nome do Titan</label>
+        <input
+          type="text"
+          id="input-nome-update"
+          placeholder="Informe o nome do Titan"
+          required
+        />
+        <label for="portador">Portador do Titan</label>
+        <input
+          type="text"
+          id="input-portador-update"
+          placeholder="Informe o nome do Portador"
+          required
+        />
+        <label for="idade">Idade do Titan</label>
+        <input
+          type="number"
+          id="input-idade-update"
+          placeholder="Informe a idade do Portador"
+          required
+        />
+        <button type="submit">Atualizar Titan</button>
+      </form>
     </section>
     <hr />
 
-    <section class="excluirTitan">
-      <h1>EXCLUIR TITAN</h1>
+    <section class="deletarTitan">
+      <h1>Deletar TITAN</h1>
+      <form action="/excluirTitan" method="DELETE" id="form-delete">
+        <label for="id">ID do Titan</label>
+        <input
+          type="number"
+          id="input-id-delete"
+          placeholder="Informe ID do Titan"
+          required
+        />
+        <button type="submit">Deletar Titan</button>
+      </form>
     </section>
 
     <script src="./script.js"></script>

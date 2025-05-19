@@ -125,3 +125,66 @@ if (formPost) {
     formPost.reset();
   });
 }
+
+const putTitan = async () => {
+  const id = document.getElementById("input-id-update").value;
+  const nome = document.getElementById("input-nome-update").value;
+  const portador = document.getElementById("input-portador-update").value;
+  const idadePortador = document.getElementById("input-idade-update").value;
+
+  try {
+    const response = await fetch(`${apiURL}/${id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        nome,
+        portador,
+        idadePortador,
+      }),
+    });
+
+    if (!response.ok) {
+      throw new Error(`Erro ao atualizar o Titan`);
+    }
+
+    const titanAtualizado = await response.json();
+    alert(`Titan atualizado com sucesso: ${titanAtualizado.nome}`);
+  } catch (error) {
+    const newLi = document.createElement("li");
+    newLi.innerText = `${error.message}`;
+    listaTitans.appendChild(newLi);
+  }
+};
+
+formPut.addEventListener("submit", (event) => {
+  event.preventDefault();
+  putTitan();
+});
+
+const deleteTitan = async () => {
+  const id = document.getElementById("input-id-delete").value;
+
+  try {
+    const response = await fetch(`${apiURL}/${id}`, {
+      method: "DELETE",
+    });
+
+    if (!response.ok) {
+      throw new Error("Erro ao deletar Titan.");
+    }
+
+    const mensagem = await response.text();
+    alert(`${mensagem}`);
+  } catch (error) {
+    const newLi = document.createElement("li");
+    newLi.innerText = `${error.message}`;
+    listaTitans.appendChild(newLi);
+  }
+};
+
+formDelete.addEventListener("submit", (event) => {
+  event.preventDefault();
+  deleteTitan();
+});
