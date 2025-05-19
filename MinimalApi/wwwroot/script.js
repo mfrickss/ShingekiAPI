@@ -1,6 +1,7 @@
 const listaTitans = document.getElementById("lista-titans");
+const listaTitansId = document.getElementById("lista-titans-por-id");
 const btnTodos = document.getElementById("btn-todos");
-const formBuscaId = document.getElementById("forma-busca-id");
+const formBuscaId = document.getElementById("form-busca-id");
 const inputId = document.getElementById("input-id");
 const formPost = document.getElementById("form-post");
 const inputNome = document.getElementById("input-nome-novo");
@@ -50,6 +51,77 @@ if (btnTodos) {
     event.preventDefault();
     getTitans();
   });
-} else {
-  console.error("Elemento 'btn-todos' não encontrado.");
+}
+
+const getTitanPorId = async (id) => {
+  listaTitansId.innerHTML = "";
+
+  try {
+    const response = await fetch(`${apiURL}/${id}`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+
+    if (!response.ok) {
+      throw new Error("Titan não encontrado!");
+    }
+
+    const titan = await response.json();
+
+    const newLi = document.createElement("li");
+    newLi.innerText = `ID: ${titan.id} | Nome: ${titan.nome} | Portador: ${titan.portador} | Idade: ${titan.idadePortador}`;
+    listaTitansId.appendChild(newLi);
+  } catch (error) {
+    const newLi = document.createElement("li");
+    newLi.innerText = `${error.message}`;
+    listaTitansId.appendChild(newLi);
+  }
+};
+
+formBuscaId.addEventListener("submit", async (e) => {
+  e.preventDefault(); // Evita o recarregamento da página
+  const id = inputId.value.trim();
+
+  await getTitanPorId(id);
+});
+
+const postTitan = async (novoTitan) => {
+  listaTitans.innerHTML = "";
+
+  try {
+    const response = await fetch(apiURL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(novoTitan),
+    });
+
+    if (!response.ok) {
+      throw new Error(`Erro ao criar o Titan`);
+    }
+
+    const titanCriado = await response.json();
+
+    alert(`Titan ${titanCriado.nome} criado com sucesso!`);
+  } catch (error) {
+    const newLi = document.createElement("li");
+    newLi.innerText = `${error.message}`;
+    listaTitans.appendChild(newLi);
+  }
+};
+
+if (formPost) {
+  formPost.addEventListener("submit", async (btn) => {
+    btn.preventDefault();
+    const novoTitan = {
+      nome: inputNome.value,
+      portador: inputPortador.value,
+      idadePortador: parseInt(inputIdadePortador.value, 10),
+    };
+    await postTitan(novoTitan);
+    formPost.reset();
+  });
 }

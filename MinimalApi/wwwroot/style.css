@@ -11,6 +11,31 @@
   font-variation-settings: "wdth" 100;
 }
 
-section {
-  background-color: black;
+.verListaTitan {
+  border-style: solid 30px black;
+  background-color: rgb(68, 42, 12);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  width: 500px;
+  position: relative;
+  overflow: auto;
+}
+.verListaTitan h1 {
+  color: rgb(255, 0, 0);
+}
+
+.verListaTitan button {
+  border: none;
+  cursor: pointer;
+  background-color: aqua;
+}
+
+.verListaTitan button:hover {
+  color: blueviolet;
+}
+
+.verListaTitan ul {
+  color: #fff;
 }

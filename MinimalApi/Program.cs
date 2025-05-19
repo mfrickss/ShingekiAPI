@@ -3,19 +3,8 @@ using MinimalApi;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Configuração do banco de dados
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlite("Data Source=titans.db"));
-
-builder.Services.AddCors(options =>
-{
-    options.AddDefaultPolicy(policy =>
-    {
-        policy.AllowAnyOrigin()
-              .AllowAnyHeader()
-              .AllowAnyMethod();
-    });
-});
 
 // Adiciona o Swagger
 builder.Services.AddEndpointsApiExplorer();
@@ -87,6 +76,8 @@ app.MapDelete("/titans/{id}", async (int id, AppDbContext db) =>
     return Results.Ok("Titã deletado com sucesso!");
 });
 
+
+// app.MapGet("/titans", () => "Minima API RODANO!");
 app.MapGet("/titans", (AppDbContext db) =>
 {
     var titans = db.tabelaTitans.ToList();
