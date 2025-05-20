@@ -2513,19 +2513,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ricar\\.nuget\\packages\\": {}
+    "C:\\Users\\RICARDOAUGUSTODECAMA\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\ShingekiAPI\\MinimalApi\\MinimalApi.csproj",
+      "projectUniqueName": "C:\\Users\\RICARDOAUGUSTODECAMA\\ShingekiAPI\\MinimalApi\\MinimalApi.csproj",
       "projectName": "MinimalApi",
-      "projectPath": "C:\\ShingekiAPI\\MinimalApi\\MinimalApi.csproj",
-      "packagesPath": "C:\\Users\\ricar\\.nuget\\packages\\",
-      "outputPath": "C:\\ShingekiAPI\\MinimalApi\\obj\\",
+      "projectPath": "C:\\Users\\RICARDOAUGUSTODECAMA\\ShingekiAPI\\MinimalApi\\MinimalApi.csproj",
+      "packagesPath": "C:\\Users\\RICARDOAUGUSTODECAMA\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\RICARDOAUGUSTODECAMA\\ShingekiAPI\\MinimalApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ricar\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\RICARDOAUGUSTODECAMA\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -2596,7 +2596,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.408/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.406/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

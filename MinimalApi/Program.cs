@@ -33,10 +33,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-// Serve arquivos estáticos (wwwroot/index.html, CSS, JS)
-app.UseDefaultFiles();
-app.UseStaticFiles();
-
 // Rotas da API
 app.MapGet("/titans/{id}", async (int id, AppDbContext db) =>
 {

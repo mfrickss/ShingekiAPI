@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KbSfGPm5n09xUm95dgIgTPZUEC+cFMEh5bbwn57+9T8=",
+  "Hash": "IcECH+g21nxfIy7LdKSxbFbkmWOB/64AulpPxLZYFk8=",
   "Source": "MinimalApi",
   "BasePath": "_content/MinimalApi",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "MinimalApi\\wwwroot",
       "Source": "MinimalApi",
-      "ContentRoot": "C:\\ShingekiAPI\\MinimalApi\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\RICARDOAUGUSTODECAMA\\ShingekiAPI\\MinimalApi\\wwwroot\\",
       "BasePath": "_content/MinimalApi",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\ShingekiAPI\\MinimalApi\\wwwroot\\index.html",
+      "Identity": "C:\\Users\\RICARDOAUGUSTODECAMA\\ShingekiAPI\\MinimalApi\\wwwroot\\index.html",
       "SourceId": "MinimalApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\ShingekiAPI\\MinimalApi\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\RICARDOAUGUSTODECAMA\\ShingekiAPI\\MinimalApi\\wwwroot\\",
       "BasePath": "_content/MinimalApi",
       "RelativePath": "index.html",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "C:\\ShingekiAPI\\MinimalApi\\wwwroot\\script.js",
+      "Identity": "C:\\Users\\RICARDOAUGUSTODECAMA\\ShingekiAPI\\MinimalApi\\wwwroot\\script.js",
       "SourceId": "MinimalApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\ShingekiAPI\\MinimalApi\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\RICARDOAUGUSTODECAMA\\ShingekiAPI\\MinimalApi\\wwwroot\\",
       "BasePath": "_content/MinimalApi",
       "RelativePath": "script.js",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\script.js"
     },
     {
-      "Identity": "C:\\ShingekiAPI\\MinimalApi\\wwwroot\\style.css",
+      "Identity": "C:\\Users\\RICARDOAUGUSTODECAMA\\ShingekiAPI\\MinimalApi\\wwwroot\\style.css",
       "SourceId": "MinimalApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\ShingekiAPI\\MinimalApi\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\RICARDOAUGUSTODECAMA\\ShingekiAPI\\MinimalApi\\wwwroot\\",
       "BasePath": "_content/MinimalApi",
       "RelativePath": "style.css",
       "AssetKind": "All",
