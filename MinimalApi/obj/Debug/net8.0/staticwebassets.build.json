@@ -1,77 +1,11 @@
 {
   "Version": 1,
-  "Hash": "IcECH+g21nxfIy7LdKSxbFbkmWOB/64AulpPxLZYFk8=",
+  "Hash": "YAyF+gWo1OPGZ/QTNg1lvAk6S24tWLCwfC1pptHJreU=",
   "Source": "MinimalApi",
   "BasePath": "_content/MinimalApi",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [
-    {
-      "Name": "MinimalApi\\wwwroot",
-      "Source": "MinimalApi",
-      "ContentRoot": "C:\\Users\\RICARDOAUGUSTODECAMA\\ShingekiAPI\\MinimalApi\\wwwroot\\",
-      "BasePath": "_content/MinimalApi",
-      "Pattern": "**"
-    }
-  ],
-  "Assets": [
-    {
-      "Identity": "C:\\Users\\RICARDOAUGUSTODECAMA\\ShingekiAPI\\MinimalApi\\wwwroot\\index.html",
-      "SourceId": "MinimalApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\RICARDOAUGUSTODECAMA\\ShingekiAPI\\MinimalApi\\wwwroot\\",
-      "BasePath": "_content/MinimalApi",
-      "RelativePath": "index.html",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\index.html"
-    },
-    {
-      "Identity": "C:\\Users\\RICARDOAUGUSTODECAMA\\ShingekiAPI\\MinimalApi\\wwwroot\\script.js",
-      "SourceId": "MinimalApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\RICARDOAUGUSTODECAMA\\ShingekiAPI\\MinimalApi\\wwwroot\\",
-      "BasePath": "_content/MinimalApi",
-      "RelativePath": "script.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\script.js"
-    },
-    {
-      "Identity": "C:\\Users\\RICARDOAUGUSTODECAMA\\ShingekiAPI\\MinimalApi\\wwwroot\\style.css",
-      "SourceId": "MinimalApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\RICARDOAUGUSTODECAMA\\ShingekiAPI\\MinimalApi\\wwwroot\\",
-      "BasePath": "_content/MinimalApi",
-      "RelativePath": "style.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\style.css"
-    }
-  ]
+  "DiscoveryPatterns": [],
+  "Assets": []
 }
