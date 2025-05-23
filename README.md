@@ -42,7 +42,7 @@ git clone https://github.com/mfrickss/ShingekiAPI
 cd ShingekiAPI
 
 # 3. Acesse a pasta da API
-cd minimalAPI
+cd MinimalApi
 
 # 4. Restaure os pacotes
 dotnet restore
