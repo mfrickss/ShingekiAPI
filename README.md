@@ -39,10 +39,13 @@
 git clone https://github.com/mfrickss/ShingekiAPI
 
 # 2. Acesse a pasta do projeto
-cd nome-da-pasta
+cd ShingekiAPI
 
-# 3. Restaure os pacotes
+# 3. Acesse a pasta da API
+cd minimalAPI
+
+# 4. Restaure os pacotes
 dotnet restore
 
-# 4. Execute a aplicação
+# 5. Execute a aplicação
 dotnet run
