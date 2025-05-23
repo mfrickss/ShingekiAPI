@@ -23,7 +23,7 @@ const getTitans = async () => {
     const response = await fetch(apiURL, {
       method: "GET",
       headers: {
-        "Content-Type": "applicantion/json",
+        "Content-Type": "application/json",
       },
     });
 
