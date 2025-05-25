@@ -1,5 +1,5 @@
 /* Fonte */
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap");
 
 * {
   margin: 0;
@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
   background-color: #f4f4f4;
   color: #333;
   line-height: 1.6;
@@ -27,7 +27,7 @@ section {
   padding: 20px;
   margin-bottom: 30px;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 label {
@@ -61,13 +61,18 @@ button:hover {
   background-color: #2e1c72;
 }
 
-ul.tabela, ul#lista-titans-por-id {
+ul.tabela,
+ul#lista-titans-por-id,
+ul#lista-titans-put,
+ul#lista-titans-deletar {
   list-style: none;
   margin-top: 15px;
 }
 
 ul.tabela li,
-ul#lista-titans-por-id li {
+ul#lista-titans-por-id li,
+ul#lista-titans-put li,
+ul#lista-titans-deletar li {
   background: #eee;
   padding: 10px;
   margin-bottom: 5px;

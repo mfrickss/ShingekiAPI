@@ -8,15 +8,12 @@ const inputNome = document.getElementById("input-nome-novo");
 const inputPortador = document.getElementById("input-portador-novo");
 const inputIdadePortador = document.getElementById("input-idade-novo");
 const formPut = document.getElementById("form-put");
+const listaTitansPut = document.getElementById("lista-titans-put");
 const formDelete = document.getElementById("form-delete");
+const listaTitansDeletar = document.getElementById("lista-titans-deletar");
 const apiURL = "http://localhost:5210/titans";
 
 const getTitans = async () => {
-  if (!listaTitans) {
-    console.error("Elemento 'lista-titans' não encontrado");
-    return;
-  }
-
   listaTitans.innerHTML = "";
 
   try {
@@ -41,8 +38,7 @@ const getTitans = async () => {
       listaTitans.appendChild(newLi);
     });
   } catch (error) {
-    console.log(error.message);
-    listaTitans.innerText = `${error.message}`;
+    listaTitans.innerHTML = `<li>${error.message}</li>`;
   }
 };
 
@@ -88,6 +84,7 @@ formBuscaId.addEventListener("submit", async (e) => {
 });
 
 const postTitan = async (novoTitan) => {
+  443;
   listaTitans.innerHTML = "";
 
   try {
@@ -132,6 +129,8 @@ const putTitan = async () => {
   const portador = document.getElementById("input-portador-update").value;
   const idadePortador = document.getElementById("input-idade-update").value;
 
+  listaTitansPut.innerHTML = "";
+
   try {
     const response = await fetch(`${apiURL}/${id}`, {
       method: "PUT",
@@ -154,7 +153,7 @@ const putTitan = async () => {
   } catch (error) {
     const newLi = document.createElement("li");
     newLi.innerText = `${error.message}`;
-    listaTitans.appendChild(newLi);
+    listaTitansPut.appendChild(newLi);
   }
 };
 
@@ -180,7 +179,7 @@ const deleteTitan = async () => {
   } catch (error) {
     const newLi = document.createElement("li");
     newLi.innerText = `${error.message}`;
-    listaTitans.appendChild(newLi);
+    listaTitansDeletar.appendChild(newLi);
   }
 };
 

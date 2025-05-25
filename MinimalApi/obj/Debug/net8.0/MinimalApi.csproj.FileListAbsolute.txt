@@ -68,7 +68,6 @@ C:\ShingekiAPI\MinimalApi\bin\Debug\net8.0\runtimes\win-arm64\native\e_sqlite3.d
 C:\ShingekiAPI\MinimalApi\bin\Debug\net8.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\ShingekiAPI\MinimalApi\bin\Debug\net8.0\runtimes\win-x86\native\e_sqlite3.dll
 <<<<<<< HEAD
-C:\ShingekiAPI\MinimalApi\bin\Debug\net8.0\MinimalApi.staticwebassets.runtime.json
 =======
 >>>>>>> parent of e5368a7 (começando o front)
 C:\Users\RICARDOAUGUSTODECAMA\ShingekiAPI\MinimalApi\bin\Debug\net8.0\appsettings.Development.json
