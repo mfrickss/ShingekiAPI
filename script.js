@@ -42,12 +42,10 @@ const getTitans = async () => {
   }
 };
 
-if (btnTodos) {
-  btnTodos.addEventListener("click", (event) => {
-    event.preventDefault();
-    getTitans();
-  });
-}
+btnTodos.addEventListener("click", (event) => {
+  event.preventDefault();
+  getTitans();
+});
 
 const getTitanPorId = async (id) => {
   listaTitansId.innerHTML = "";
@@ -70,9 +68,7 @@ const getTitanPorId = async (id) => {
     newLi.innerText = `ID: ${titan.id} | Nome: ${titan.nome} | Portador: ${titan.portador} | Idade: ${titan.idadePortador}`;
     listaTitansId.appendChild(newLi);
   } catch (error) {
-    const newLi = document.createElement("li");
-    newLi.innerText = `${error.message}`;
-    listaTitansId.appendChild(newLi);
+    exibirErro(listaTitansId, error.message);
   }
 };
 
@@ -84,7 +80,6 @@ formBuscaId.addEventListener("submit", async (e) => {
 });
 
 const postTitan = async (novoTitan) => {
-  443;
   listaTitans.innerHTML = "";
 
   try {
@@ -104,9 +99,7 @@ const postTitan = async (novoTitan) => {
 
     alert(`Titan ${titanCriado.nome} criado com sucesso!`);
   } catch (error) {
-    const newLi = document.createElement("li");
-    newLi.innerText = `${error.message}`;
-    listaTitans.appendChild(newLi);
+    exibirErro(listaTitans, error.message);
   }
 };
 
@@ -127,7 +120,10 @@ const putTitan = async () => {
   const id = document.getElementById("input-id-update").value;
   const nome = document.getElementById("input-nome-update").value;
   const portador = document.getElementById("input-portador-update").value;
-  const idadePortador = document.getElementById("input-idade-update").value;
+  const idadePortador = parseInt(
+    document.getElementById("input-idade-update").value,
+    10
+  );
 
   listaTitansPut.innerHTML = "";
 
@@ -151,9 +147,7 @@ const putTitan = async () => {
     const titanAtualizado = await response.json();
     alert(`Titan atualizado com sucesso: ${titanAtualizado.nome}`);
   } catch (error) {
-    const newLi = document.createElement("li");
-    newLi.innerText = `${error.message}`;
-    listaTitansPut.appendChild(newLi);
+    exibirErro(listaTitansPut, error.message);
   }
 };
 
@@ -177,9 +171,7 @@ const deleteTitan = async () => {
     const mensagem = await response.text();
     alert(`${mensagem}`);
   } catch (error) {
-    const newLi = document.createElement("li");
-    newLi.innerText = `${error.message}`;
-    listaTitansDeletar.appendChild(newLi);
+    exibirErro(listaTitansDeletar, error.message);
   }
 };
 
@@ -187,3 +179,9 @@ formDelete.addEventListener("submit", (event) => {
   event.preventDefault();
   deleteTitan();
 });
+
+function exibirErro(lista, mensagem) {
+  const newLi = document.createElement("li");
+  newLi.innerText = mensagem;
+  lista.appendChild(newLi);
+}
