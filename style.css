@@ -1,0 +1,81 @@
+/* Fonte */
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Titillium Web", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+h1 {
+  color: #1a1244;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+section {
+  background: white;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #1a1244;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2e1c72;
+}
+
+ul.tabela,
+ul#lista-titans-por-id,
+ul#lista-titans-put,
+ul#lista-titans-deletar {
+  list-style: none;
+  margin-top: 15px;
+}
+
+ul.tabela li,
+ul#lista-titans-por-id li,
+ul#lista-titans-put li,
+ul#lista-titans-deletar li {
+  background: #eee;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-left: 5px solid #1a1244;
+  border-radius: 4px;
+}
